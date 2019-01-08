@@ -20,3 +20,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/usage/add', 'UsageController@index')->name('add-usage');
+
+Route::get('/gef', 'Local\GefController@index')->name('gef');
+Route::get('/gef/esern', 'Local\GefController@esern')->name('gef-esern');
